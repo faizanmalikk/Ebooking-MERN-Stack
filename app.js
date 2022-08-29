@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const errorMiddleware = require('./middleware/error')
+const errorMiddleware = require('./backend/middleware/error')
 const cookieaParser = require('cookie-parser')
 const cors = require('cors')
 const bodyParser = require('body-parser')
@@ -33,9 +33,9 @@ app.use(cors({
 app.use(fileUpload({useTempFiles:true}))
 
 // import routes
-const hotel = require('./routes/hotelRoute')
-const user = require('./routes/userRoutes')
-const room = require('./routes/roomRoute')
+const hotel = require('./backend/routes/hotelRoute')
+const user = require('./backend/routes/userRoutes')
+const room = require('./backend/routes/roomRoute')
 
 app.use('/api' , hotel)
 app.use('/api' , user)
