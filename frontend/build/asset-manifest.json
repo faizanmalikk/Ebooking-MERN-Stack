@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.656c4411.css",
+    "main.js": "/static/js/main.e63c5a46.js",
+    "static/media/img2.jpg": "/static/media/img2.d275a566644452200dec.jpg",
+    "static/media/ok.jpg": "/static/media/ok.1f921599a212c7fd77e3.jpg",
+    "static/media/resorts.jpg": "/static/media/resorts.7c5074d137bb2951d183.jpg",
+    "static/media/khi.jpg": "/static/media/khi.acafa81247573c2aca9f.jpg",
+    "static/media/apartment.jpg": "/static/media/apartment.efb28b28d2a470c02a5c.jpg",
+    "static/media/villas.jpeg": "/static/media/villas.22a3f1a73403e0d7d146.jpeg",
+    "static/media/lhr.jpg": "/static/media/lhr.4c69ab521a5f39cfe8ba.jpg",
+    "static/media/fsd.jpg": "/static/media/fsd.e35dd8631137b6915b64.jpg",
+    "static/media/cabins.jpeg": "/static/media/cabins.80448a2185b649f0fed3.jpeg",
+    "static/media/hotel.jpeg": "/static/media/hotel.a6785e89f73109f2572e.jpeg",
+    "index.html": "/index.html",
+    "main.656c4411.css.map": "/static/css/main.656c4411.css.map",
+    "main.e63c5a46.js.map": "/static/js/main.e63c5a46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.656c4411.css",
+    "static/js/main.e63c5a46.js"
+  ]
+}
