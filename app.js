@@ -42,10 +42,10 @@ app.use('/api' , user)
 app.use('/api' , room)
 
 
-app.use(express.static(path.join(__dirname,'../frontend/build')))
+app.use(express.static(path.join(__dirname,'./frontend/build')))
 
 app.get('*',(req,res)=>{
-  res.sendFile(path.resolve(__dirname,'../frontend/build/index.html'))
+  res.sendFile(path.resolve(__dirname,'./frontend/build/index.html'))
 })
 
 
