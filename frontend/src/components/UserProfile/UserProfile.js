@@ -60,36 +60,37 @@ const UserProfile = ({ profileOpen, setProfileOpen }) => {
                         <Typography fontSize='17px' color='#757575' fontWeight={'bold'}>{userInfo.email}</Typography>
                     </Box>
                 </Box>
-
-                <Box className='profile-con' >
-                    <Box display='flex' gap='1rem' onClick={() => navigate('/me')}>
-                        <IconButton disableRipple
-                            sx={{
-                                backgroundColor: '#E5FAFB',
-                                color: '#03C9D7',
-                                height: '80px',
-                                width: '80px',
-                                borderRadius: '50%'
-                            }}>
-                            <Settings />
-                        </IconButton>
-                        <Box>
-                            <Typography fontSize={'25px'} fontWeight='bold'>My Profile</Typography>
-                            <Typography fontSize={'20px'} color='#757575' >Account Settings</Typography>
+                <Box display='flex' flexDirection={'column'} justifyContent='space-between' sx={{height:'100%'}}>
+                    <Box className='profile-con'>
+                        <Box display='flex' gap='1rem' onClick={() => navigate('/me')}>
+                            <IconButton disableRipple
+                                sx={{
+                                    backgroundColor: '#E5FAFB',
+                                    color: '#03C9D7',
+                                    height: '80px',
+                                    width: '80px',
+                                    borderRadius: '50%'
+                                }}>
+                                <Settings />
+                            </IconButton>
+                            <Box>
+                                <Typography fontSize={'25px'} fontWeight='bold'>My Profile</Typography>
+                                <Typography fontSize={'20px'} color='#757575' >Account Settings</Typography>
+                            </Box>
                         </Box>
+
                     </Box>
-
+                    <Box marginTop={{xs:'60px',sm:'1rem'}}>
+                        <Button className='btn' variant='contained'
+                            onClick={() => logoutUser()}
+                            sx={{
+                                width: '100%'
+                            }}>
+                            Logout
+                        </Button>
+                    </Box>
                 </Box>
 
-                <Box display='flex' justifyContent={'center'} marginTop='1rem'>
-                    <Button className='btn' variant='contained'
-                        onClick={() => logoutUser()}
-                        sx={{
-                            width: { md: '100%' }
-                        }}>
-                        Logout
-                    </Button>
-                </Box>
 
             </StyledProfile>
 
