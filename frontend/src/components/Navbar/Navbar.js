@@ -30,7 +30,7 @@ const Navbar = () => {
         <AppBar sx={{ backgroundColor: '#01579b' }} position='static'>
             <Container maxWidth='xl'>
                 <StyledBox>
-                    <Box display='flex' justifyContent={'space-between'} >
+                    <Box display='flex' justifyContent={'space-between'} alignItems='center'>
                         <Typography component={Link} to='/' sx={{ textDecoration: 'none', color: 'white' }} fontFamily={'Macondo'} fontSize='30px' >EBooking</Typography>
                         {userInfo ? (
                             <Box  sx={{ position: 'relative' }}>
